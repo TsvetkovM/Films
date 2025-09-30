@@ -1,0 +1,29 @@
+{
+  "name": "Vite_vanilla-app-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://tate-t.github.io/Vite_vanilla-app-template/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/Vite_vanilla-app-template/",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
+  },
+  "author": " <@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "body": "^5.1.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "skroll": "^1.4.3",
+    "swiper": "^10.0.4",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}
