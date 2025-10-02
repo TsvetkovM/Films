@@ -6,7 +6,7 @@
   "homepage": "https://TsvetkovM.github.io/Films/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Vite_vanilla-app-template/",
+    "build": "vite build --base=/Films/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
