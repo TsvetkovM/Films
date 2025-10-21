@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Films</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <script type="module" src="main.js"></script>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/main.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/modal.html"></include>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filmoteka</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon (1).ico">
+  <link rel="stylesheet" href="./css/index.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo-wrap">
+        <a class="header-logo" href="#">
+          <svg class="logo-svg"></svg>
+        </a>
+        <a href="#" class="header-logo-name">Filmoteka</a>
+      </div>
+      <nav class="header-navigation">
+        <ul class="header-navigation-wrap-ul">
+          <li class="header-navigation-wrap-ul-li">
+            <a href="#" class="header-navigation-wrap-ul-li-a">Home</a>
+          </li>
+          <li class="header-navigation-wrap-ul-li">
+            <a href="#" class="header-navigation-wrap-ul-li-a">My library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-search-form">
+      <form>
+        <input type="text" placeholder="Find movies" />
+        <button type="submit"></button>
+      </form>
+    </div>
+
+    <div class="header-extras">
+      <input class="input-darkmode" type="checkbox" id="darkmode-toggle" />
+      <label class="label-darkmode" for="darkmode-toggle"></label>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main-section">
+      <ul class="main-section-card"></ul>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text-p">©2025 | All Rights Reserved | Developed by GoIT Students</p>
+  </footer>
+
+  <div class="modal hidden">
+    <div class="modal-content">
+  <span class="modal-close">&times;</span>
+
+  <div class="modal-layout">
+    <div class="modal-poster-wrap">
+      <img class="modal-poster" src="" alt="Movie Poster" />
+    </div>
+
+    <div class="modal-text">
+      <h2 class="modal-title"></h2>
+      <p class="modal-year"></p>
+      <p class="modal-director"></p>
+      <p class="modal-actors"></p>
+      <p class="modal-rating"></p>
+      <p class="modal-plot"></p>
+      <div class="modal-buttons">
+        <button class="btn-watch">Add to Watched</button>
+        <button class="btn-queue">Add to Queue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
 </html>
